@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: skyblue;
+    color: darkblue;
+}
+
+header {
+    text-align: center;
+    background-color: cornflowerblue;
+    color: black;
+    padding: 15px;
+}
+
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: black;
+    border-bottom: 3px solid cornflowerblue;
+    padding-bottom: 5px;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 4px solid black;
+    padding-left: 15px;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+ul {
+    line-height: 1.8;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+   
+
+video {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+}
