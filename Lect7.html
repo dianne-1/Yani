@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lecture 7: Bootstrap Summary</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 20px;
+        }
+
+        .lecture-header {
+            background: #563d7c;
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .topic-card {
+            border-left: 5px solid #563d7c;
+            margin-bottom: 20px;
+        }
+
+        code {
+            color: #d63384;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="lecture-header text-center">
+            <h1>Bootstrap Framework</h1>
+            <p class="lead">CIP1101 ITBD</p>
+        </header>
+
+        <main>
+            <section class="card topic-card shadow-sm mb-4">
+                <div class="card-body">
+                    <h2 class="card-title text-primary">1. What is Bootstrap?</h2>
+                    <p>Bootstrap is the most popular <strong>HTML, CSS, and JS framework</strong> for developing responsive, mobile-first websites.</p>
+                    <ul>
+                        <li><strong>Origin:</strong> Created by Mark Otto and Jacob Thornton at Twitter (2011).</li>
+                        <li><strong>Mobile-First:</strong> Designed so styles are optimized for mobile devices by default.</li>
+                        <li><strong>Uniformity:</strong> Provides a clean and consistent interface for developers.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="card topic-card shadow-sm mb-4">
+                <div class="card-body">
+                    <h2 class="card-title text-success">2. Containers</h2>
+                    <p>Containers are the most basic layout element in Bootstrap. They are required when using the grid system.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="p-3 border bg-light">
+                                <code>.container</code>
+                                <p class="small">Provides a responsive <strong>fixed width</strong> container.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 border bg-light">
+                                <code>.container-fluid</code>
+                                <p class="small">Provides a <strong>full width</strong> container, spanning the entire width of the viewport.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card topic-card shadow-sm mb-4">
+                <div class="card-body">
+                    <h2 class="card-title text-warning">3. Contextual Classes (Colors)</h2>
+                    <p>Bootstrap provides classes to convey meaning through color.</p>
+
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Meaning</th>
+                                <th>Text Class</th>
+                                <th>Background Class</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-primary">
+                                <td>Important / Blue</td>
+                                <td><code>.text-primary</code></td>
+                                <td><code>.bg-primary</code></td>
+                            </tr>
+                            <tr class="table-success">
+                                <td>Success / Green</td>
+                                <td><code>.text-success</code></td>
+                                <td><code>.bg-success</code></td>
+                            </tr>
+                            <tr class="table-danger">
+                                <td>Danger / Red</td>
+                                <td><code>.text-danger</code></td>
+                                <td><code>.bg-danger</code></td>
+                            </tr>
+                            <tr class="table-warning">
+                                <td>Warning / Yellow</td>
+                                <td><code>.text-warning</code></td>
+                                <td><code>.bg-warning</code></td>
+                            </tr>
+                            <tr class="table-info">
+                                <td>Information / Teal</td>
+                                <td><code>.text-info</code></td>
+                                <td><code>.bg-info</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="card topic-card shadow-sm mb-4">
+                <div class="card-body">
+                    <h2 class="card-title text-info">4. Typography & Tables</h2>
+                    <p>Bootstrap styles HTML headings and tables to look better automatically.</p>
+                    <ul>
+                        <li><strong>Display Headings:</strong> Use <code>.display-1</code> through <code>.display-4</code> for larger, stand-out titles.</li>
+                        <li><strong>Small Text:</strong> Use the <code>&lt;small&gt;</code> element to create lighter, secondary text.</li>
+                        <li><strong>Striped Tables:</strong> Add <code>.table-striped</code> to the <code>&lt;table&gt;</code> tag for zebra-striping.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer >
+
+        </footer>
+    </div>
+
+</body>
+</html>

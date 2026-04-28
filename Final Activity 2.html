@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Data Sheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+        }
+
+        .container {
+            width: 800px;
+            margin: auto;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        input[type="text"], input[type="email"], input[type="number"], input[type="date"] {
+            border: none;
+            border-bottom: 1px solid black;
+            outline: none;
+            font-size: 12px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 2px;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <form>
+
+            <table>
+                <tr>
+                    <td width="100">
+                        <div style="width:80px;height:80px;border:1px solid black;border-radius:50%;text-align:center;line-height:80px;">
+                            LOGO
+                        </div>
+                    </td>
+
+                    <td class="center">
+                        <strong>SAMPLE UNIVERSITY</strong><br>
+                        ENROLLMENT SYSTEM<br><br>
+                        <strong>PERSONAL DATA SHEET</strong><br>
+                        <small>(Graduate School, Law, Medicine)</small>
+                    </td>
+
+                    <td class="right">
+                        Program: <input type="text" name="program" style="width:120px;"><br><br>
+                        Student #: <input type="text" name="student_no" style="width:120px;">
+                    </td>
+                </tr>
+            </table>
+
+            <br>
+
+            
+            <table border="0">
+                <tr>
+                    <td>SURNAME<br><input type="text" name="surname"></td>
+                    <td>GIVEN NAME<br><input type="text" name="given_name"></td>
+                    <td>MIDDLE NAME<br><input type="text" name="middle_name"></td>
+                    <td>AUXILIARY NAME<br><input type="text" name="aux_name"></td>
+                </tr>
+            </table>
+
+            <br>
+
+            <strong>STUDENT DETAILS:</strong><br><br>
+
+            City Address:
+            <input type="text" name="city_address" style="width:600px;"><br><br>
+
+            Zip Code:
+            <input type="text" name="zip1" style="width:100px;">
+            Tel. No.:
+            <input type="text" name="tel" style="width:120px;">
+            E-mail address:
+            <input type="email" name="email" style="width:200px;"><br><br>
+
+            Home Address:
+            <input type="text" name="home_address" style="width:600px;"><br><br>
+
+            Zip Code:
+            <input type="text" name="zip2" style="width:100px;">
+            Region:
+            <input type="text" name="region" style="width:120px;"><br><br>
+
+            Birthday:
+            <input type="date" name="birthday">
+            Age:
+            <input type="number" name="age" style="width:60px;"><br><br>
+
+            Birthplace:
+            <input type="text" name="birthplace" style="width:150px;">
+            Religion:
+            <input type="text" name="religion" style="width:120px;"><br><br>
+
+            Citizenship:
+            <input type="text" name="citizenship" style="width:120px;">
+            Sex:
+            <input type="text" name="sex" style="width:80px;"><br><br>
+
+            If Alien, ACR #:
+            <input type="text" name="acr"><br><br>
+
+            <table>
+                <tr>
+                    <td width="50%">
+                        <strong>Legal Status:</strong><br>
+                        <label><input type="checkbox" name="legal[]" value="citizen"> Citizen of RP</label><br>
+                        <label><input type="checkbox" name="legal[]" value="permanent"> Permanent Resident</label><br>
+                        <label><input type="checkbox" name="legal[]" value="student_visa"> Person granted permission to enter and remain as a student in RP on a visa for a defined period of time</label><br>
+                        <label><input type="checkbox" name="legal[]" value="dependent_visa"> Person granted permission to enter and remain as a child or spouse of a worker on a visa for a defined period of time</label><br>
+                        <label><input type="checkbox" name="legal[]" value="other"> Other visa</label><br>
+                        <label><input type="checkbox" name="legal[]" value="unknown"> Legal status not known</label>
+                    </td>
+
+                    <td>
+                        <strong>Civil Status:</strong><br>
+                        <label><input type="radio" name="civil" value="single"> Single</label><br>
+                        <label><input type="radio" name="civil" value="married"> Married</label><br>
+                        <label><input type="radio" name="civil" value="divorced"> Divorced</label><br>
+                        <label><input type="radio" name="civil" value="widowed"> Widowed</label><br>
+                        <label><input type="radio" name="civil" value="separated"> Separated</label><br><br>
+
+                        Working:
+                        <label><input type="radio" name="working" value="yes"> Yes</label>
+                        <label><input type="radio" name="working" value="no"> No</label><br>
+                        Office/Bus. Tel. #:
+                        <input type="text" name="work_tel">
+                    </td>
+                </tr>
+            </table>
+
+            <br>
+
+            <table border="0">
+                <tr>
+                    <td width="50%">
+                        <strong>FATHER'S INFORMATION:</strong><br><br>
+                        Surname: <input type="text" name="f_surname"><br>
+                        First Name: <input type="text" name="f_fname"><br>
+                        Middle Name: <input type="text" name="f_mname"><br>
+                        Auxiliary Name: <input type="text" name="f_aux"><br>
+                        Occupation/Employment: <input type="text" name="f_job"><br>
+                        Educational Attainment: <input type="text" name="f_edu"><br>
+                        Parent's Address: <input type="text" name="f_address"><br>
+                        Zip Code: <input type="text" name="f_zip">
+                    </td>
+
+                    <td>
+                        <strong>MOTHER'S INFORMATION:</strong><br><br>
+                        Surname: <input type="text" name="m_surname"><br>
+                        First Name: <input type="text" name="m_fname"><br>
+                        Middle Name: <input type="text" name="m_mname"><br>
+                        Auxiliary Name: <input type="text" name="m_aux"><br>
+                        Occupation/Employment: <input type="text" name="m_job"><br>
+                        Educational Attainment: <input type="text" name="m_edu"><br>
+                        Parent's Tel. #: <input type="text" name="m_tel">
+                    </td>
+                </tr>
+            </table>
+
+            <br>
+
+            <table border="0">
+                <tr>
+                    <td width="50%">
+                        <strong>GUARDIAN'S INFORMATION:</strong> (If Applicable)<br><br>
+                        Surname: <input type="text" name="g_surname"><br>
+                        First Name: <input type="text" name="g_fname"><br>
+                        Middle Name: <input type="text" name="g_mname"><br>
+                        Auxiliary Name: <input type="text" name="g_aux"><br>
+                        Occupation/Employment: <input type="text" name="g_job"><br>
+                        Off./Bus. Tel. #: <input type="text" name="g_tel">
+                    </td>
+
+                    <td>
+                        Guardian's Address: <input type="text" name="g_address"><br><br>
+                        Zip Code: <input type="text" name="g_zip"><br><br>
+                        Tel. #: <input type="text" name="g_tel2">
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+
+</body>
+</html>

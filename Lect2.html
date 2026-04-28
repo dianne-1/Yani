@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Lecture 2 Summary: HTML Structures</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            background: #f4f4f4;
+            padding: 1rem;
+            border-bottom: 3px solid #333;
+            text-align: center;
+        }
+
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+        }
+
+        code {
+            background: #eee;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+
+        .note {
+            font-style: italic;
+            color: #555;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.8rem;
+            text-align: center;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>HTML Structures Summary</h1>
+        <p>CIP1101 Integrative Programming and Technologies 1 </p>
+    </header>
+
+    <nav>
+        <p><strong>Quick Navigation:</strong> Tools | Structure | Semantics | Formatting</p>
+    </nav>
+
+    <main>
+        <section>
+            <h2>1. The Professional's Toolkit</h2>
+            <p>Before building, professionals prepare their environment:</p>
+            <ul>
+                <li><strong>Hardware:</strong> A computer (any specs work, but investment is recommended for serious work).</li>
+                <li><strong>Text Editor:</strong> Notepad++ or similar code editors.</li>
+                <li><strong>Browsers:</strong> Chrome, Firefox, Edge, or Safari for testing.</li>
+                <li><strong>Project Structure:</strong> A main folder containing <code>index.html</code>, and subfolders for <code>images</code>, <code>styles</code>, and <code>scripts</code> .</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. What is HTML5?</h2>
+            <p>HTML (Hypertext Markup Language) is a <strong>markup language</strong>, not a programming language.</p>
+            <ul>
+                <li><strong>Timeline:</strong> First published in 1991; HTML5 was officially published in 2012.</li>
+                <li><strong>Goal:</strong> HTML5 aims to reduce the need for external plugins, support existing web pages, and improve the "semantic" (meaning) of elements.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. Basic Document Structure</h2>
+            <p>A standard HTML5 document follows this hierarchy:</p>
+            <ul>
+                <li><code>&lt;!DOCTYPE html&gt;</code>: Defines the document as HTML5.</li>
+                <li><code>&lt;html lang="en"&gt;</code>: The root element wrapping all content.</li>
+                <li><code>&lt;head&gt;</code>: Container for metadata, title, and links (not visible to viewers).</li>
+                <li><code>&lt;body&gt;</code>: Contains all visible content like text and images.</li>
+            </ul>
+        </section>
+
+
+        <section>
+            <h2>4. Semantic Elements</h2>
+            <p>HTML5 introduced elements that describe their meaning to both the browser and developer:</p>
+            <ul>
+                <li><code>&lt;header&gt;</code>: Introductory content.</li>
+                <li><code>&lt;nav&gt;</code>: Major blocks of navigation links.</li>
+                <li><code>&lt;section&gt;</code>: A thematic grouping of content.</li>
+                <li><code>&lt;article&gt;</code>: Independent, self-contained content (e.g., blog posts).</li>
+                <li><code>&lt;aside&gt;</code>: Content related to the main topic but placed aside (sidebars).</li>
+                <li><code>&lt;footer&gt;</code>: Information about the author, copyright, or contact info.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Text Controls & Formatting</h2>
+            <p>Elements used to define the look and function of text:</p>
+            <ul>
+                <li><strong>Headings:</strong> <code>&lt;h1&gt;</code> (largest) to <code>&lt;h6&gt;</code> (smallest).</li>
+                <li><strong>Strong/Bold:</strong> <code>&lt;strong&gt;</code> (logical emphasis) and <code>&lt;b&gt;</code> (physical bold) .</li>
+                <li><strong>Emphasis:</strong> <code>&lt;em&gt;</code> (logical) and <code>&lt;i&gt;</code> (physical italics).</li>
+                <li><strong>Line Breaks:</strong> <code>&lt;br&gt;</code> (next line) vs <code>&lt;p&gt;</code> (adds a blank line).</li>
+                <li><strong>Entities:</strong> Special characters like <code>&amp;nbsp;</code> (space), <code>&amp;lt;</code> (<), and <code>&amp;copy;</code> (©).</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        
+    </footer>
+
+</body>
+</html>
